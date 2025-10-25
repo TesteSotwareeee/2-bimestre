@@ -1,4 +1,3 @@
 # 2-bimestre
 
-Leonardo Xavier Rodrigues
-Nathacha Alexsandra Cardoso Calsavara
+Leonardo Xavier Rodrigues, Nathacha Alexsandra Cardoso Calsavara
