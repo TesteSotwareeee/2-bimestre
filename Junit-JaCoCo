@@ -1,0 +1,45 @@
+## 1. O que é JUnit
+
+JUnit é um **framework de testes unitários** para aplicações Java. Ele permite criar e executar testes automatizados para verificar se o comportamento das classes e métodos está correto.
+
+Um teste unitário é um pequeno programa que valida o funcionamento de uma parte específica do código — normalmente um método.  
+Com o JUnit, cada teste é independente, simples e rápido de rodar, facilitando a identificação de erros logo no desenvolvimento.
+
+### Principais características
+- **Automação:** executa vários testes de forma automática.
+- **Assertivas:** usa métodos como `assertEquals`, `assertTrue`, `assertThrows` para validar resultados esperados.
+- **Independência:** cada teste roda isoladamente, garantindo que um erro não contamine os outros.
+- **Integração:** funciona bem com IDEs, pipelines de CI/CD e ferramentas de cobertura como o JaCoCo.
+
+# JaCoCo — Java Code Coverage
+
+## O que é JaCoCo
+
+**JaCoCo (Java Code Coverage)** é uma ferramenta usada para medir o **nível de cobertura de código** alcançado pelos testes automatizados em projetos Java.  
+Ela informa **quais partes do código foram executadas** durante os testes e **quais não foram**, ajudando a identificar áreas sem verificação.
+
+Em termos simples: o JaCoCo mostra se você realmente testou tudo aquilo que acha que testou.
+
+---
+
+## Tipos de Cobertura
+
+| Tipo | Descrição |
+|------|------------|
+| **Cobertura de Linhas** | Mede quantas linhas de código foram executadas. |
+| **Cobertura de Branches** | Mede quantos caminhos de decisão (`if`, `else`, `switch`, etc.) foram testados. |
+| **Cobertura de Métodos** | Indica se todos os métodos foram chamados durante os testes. |
+| **Cobertura de Classes** | Verifica se cada classe foi exercitada por pelo menos um teste. |
+
+Essas métricas aparecem em relatórios com cores:
+- 🟩 **Verde:** código totalmente coberto.
+- 🟨 **Amarelo:** parcialmente testado.
+- 🟥 **Vermelho:** não testado.
+
+---
+
+## Como o JaCoCo funciona
+
+1. Durante a execução dos testes (por exemplo, com **JUnit**), o JaCoCo adiciona um **agente na JVM**.  
+2. Esse agente monitora a execução e marca cada linha de código visitada.  
+3. Após os testes, ele gera um **relatório detalhado** mostrando a porcentagem de cobertura.  
